@@ -51,13 +51,25 @@
 
 //Scope(Multiple Functions)
 
+// fn main()
+// {
+//     x_value();
+// }
+
+// fn x_value()
+// {
+//     let x="hello";
+//     println!("{},world",x);
+// }
+
+
+
+
+//Shadowing
+
 fn main()
 {
-    x_value();
-}
-
-fn x_value()
-{
-    let x="hello";
-    println!("{},world",x);
+    let x:i32=4;
+    let x="Some";//overwrite(changing the type)
+    println!("{} value of x",x);
 }
