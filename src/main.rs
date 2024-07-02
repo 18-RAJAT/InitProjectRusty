@@ -78,14 +78,29 @@
 
 //Example of Shadowing:
 
+// fn main()
+// {
+    //     let x:i32=5;
+    //     {
+//         let x=15;
+//         assert_eq!(x,15);
+//     }
+//     assert_eq!(x,5);
+//     let x=30;
+//     println!("{} value of x",x);
+// }
+
+
+
+
+
+//Example of Shadowing:
+
 fn main()
 {
-    let x:i32=5;
-    {
-        let x=15;
-        assert_eq!(x,15);
-    }
-    assert_eq!(x,5);
-    let x=30;
-    println!("{} value of x",x);
+    let mut x:i32=1;
+    x=7;
+    let mut x=4;
+    x+=3;
+    println!("Working");
 }
