@@ -67,9 +67,25 @@
 
 //Shadowing
 
+// fn main()
+// {
+//     let x:i32=4;
+//     let x="Some";//overwrite(changing the type)
+//     println!("{} value of x",x);
+// }
+
+
+
+//Example of Shadowing:
+
 fn main()
 {
-    let x:i32=4;
-    let x="Some";//overwrite(changing the type)
+    let x:i32=5;
+    {
+        let x=15;
+        assert_eq!(x,15);
+    }
+    assert_eq!(x,5);
+    let x=30;
     println!("{} value of x",x);
 }
