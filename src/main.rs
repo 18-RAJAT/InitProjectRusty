@@ -37,13 +37,27 @@
 
 
 
-// Shadowing
+
+// fn main()
+// {
+//     let x: i32=10;
+//     {
+//         let y: i32=20;
+//         println!("The value of x is {} and the value of y is {}",x,y)
+//     }
+// }
+
+
+
+//Scope(Multiple Functions)
 
 fn main()
 {
-    let x: i32=10;
-    {
-        let y: i32=20;
-        println!("The value of x is {} and the value of y is {}",x,y)
-    }
+    x_value();
+}
+
+fn x_value()
+{
+    let x="hello";
+    println!("{},world",x);
 }
