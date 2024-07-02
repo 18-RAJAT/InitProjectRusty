@@ -31,4 +31,3 @@ fn main()
     assert_eq!(x,3);
     println!("Success");
 }
-
