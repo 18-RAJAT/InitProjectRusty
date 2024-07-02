@@ -14,6 +14,7 @@
 
 
 
+//mut means->it is a keyword allows to explicitly specify which variables you intend to change,making your code clearer and helping prevent accidental modifications of variables that should remain constant.
 
 
 
